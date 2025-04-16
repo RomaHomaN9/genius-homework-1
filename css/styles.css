@@ -1,0 +1,133 @@
+:root {
+    --primary-white: #fff;
+    --primary-blue: #2b7fff;
+    --primary-dark-blue: #011c44;
+
+    --grey: #4a4a4a;
+    --white-grey: #747272;
+    --dark-blue: #011f4a;
+    --yellow: #ffd02b;
+}
+
+/* cpecely */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Play', sans-serif;
+    background-color: var(--primary-white);
+    color: var(--dark-blue);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* header */
+.address {
+    color: var(--primary-dark-blue);
+    text-decoration: none;
+}
+
+.address:hover {
+    color: var(--primary-blue);
+    font-weight: 700;
+}
+
+/* main */
+
+/* section1 */
+
+.hero-title {
+    color: var(--primary-blue);
+    text-transform: capitalize;
+}
+
+#section1 button {
+    border-radius: 32px;
+    background-color: var(--primary-blue);
+    color: var(--primary-white);
+}
+
+#section1:last-child {
+    color: var(--white-grey);
+}
+
+/* section2 */
+
+#section2 > h2 > span {
+    color: var(--primary-blue);
+    text-transform: capitalize;
+}
+
+#section2 > p > span {
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+/* section3 */
+
+#section3 > h2 > span {
+    color: var(--primary-blue);
+}
+
+#section3 > article {
+    background-color: var(--primary-white);
+    border-radius: 32px;
+}
+
+/* section4 */
+
+#section4 > h2 > span {
+    color: var(--primary-blue);
+}
+
+#section4 > article {
+    border-radius: 120px 4px;
+}
+
+#section4 > .procedur1 {
+    background-image: url('../img/people/mask\ for\ face.jpg');
+}
+
+#section4 > .procedur2 {
+    background-image: url('../img/people/injection\ for\ face.jpg');
+}
+
+#section4 > .procedur3 {
+    background-image: url('../img/people/clear\ face.jpg');
+}
+
+/* section5 */
+
+#section5 > h2 > span {
+    color: var(--primary-blue);
+}
+
+#section5 > article > h3 > span {
+    color: var(--primary-blue);
+}
+
+#section5 > article > button {
+    background-color: var(--primary-blue);
+    color: var(--primary-white);
+    border-radius: 32px;
+}
+
+#section5 > article > p,
+#section5 > article > p > a {
+    color: var(--white-grey);
+}
+
+/* footer */
+
+footer > a {
+    color: var(--primary-white);
+    text-decoration: none;
+}
+
+footer > p {
+    color: var(--white-grey);
+}
