@@ -18,10 +18,10 @@
             <img src="./img/icon/logo.svg" alt="Лого на якому написано << Beauty Zone >>">
             <nav class="header__nav">
                 <ul class="header__list-nav">
-                    <li><a class="header__nava" href="#reincarnation">Про нас</a></li>
-                    <li><a class="header__nava" href="#howchoose">Чому ми</a></li>
-                    <li><a class="header__nava" href="#procedur">Наші процедури</a></li>
-                    <li><a class="header__nava" href="#where">Контакти</a></li>
+                    <li><a class="header__nava nava" href="#reincarnation">Про нас</a></li>
+                    <li><a class="header__nava nava" href="#howchoose">Чому ми</a></li>
+                    <li><a class="header__nava nava" href="#procedur">Наші процедури</a></li>
+                    <li><a class="header__nava nava" href="#where">Контакти</a></li>
                 </ul>
             </nav>
             <address>
@@ -49,7 +49,7 @@
                     </li>
                 </ul>
             </address>
-            <button type="button" class="header__menu-button">
+            <button type="button" class="header__menu-button" onclick="openModalWindowTel()">
                 <svg class="header__menu-icon">
                     <use href="./img/icon/icon.svg#menu"></use>
                 </svg>
@@ -61,7 +61,8 @@
             <div class="hero-section__cent">
                 <p class="hero-section__paragraf-1 grey-color">Косметологічна клініка</p>
                 <h1 class="hero-section__title">beauty zone</h1>
-                <button type="button" class="hero-section__button button">Замовити дзвінок</button>
+                <button type="button" class="hero-section__button button" onclick="openModalWindow()">Замовити
+                    дзвінок</button>
                 <p class="hero-section__paragraf-2 grey-color">Запишись та отримай безкоштовну консультацію нашого
                     косметолога</p>
             </div>
@@ -282,7 +283,7 @@
 
     <div class="backdrop hidden">
         <div class="modal">
-            <button class="modal__button-close-form">
+            <button class="modal__button-close-form" onclick="closeModalWindow()">
                 <svg class="modal__icon-close-form">
                     <use href="./img/icon/icon.svg#X"></use>
                 </svg>
@@ -308,6 +309,48 @@
         </div>
     </div>
 
+    <div class="modal-tel hidden">
+        <img src="./img/icon/logo.svg" alt="Лого на якому написано << Beauty Zone >>" class="modal-tel__img">
+        <button class="modal-tel__button-close" onclick="closeModalWindowTel()">
+            <svg class="modal-tel__icon-close">
+                <use href="./img/icon/icon.svg#X"></use>
+            </svg>
+        </button>
+        <ul class="modal-tel__list-nav">
+            <li><a class="modal-tel__nava nava" onclick="closeModalWindowTel()" href="#reincarnation">Про нас</a></li>
+            <li><a class="modal-tel__nava nava" onclick="closeModalWindowTel()" href="#howchoose">Чому ми</a></li>
+            <li><a class="modal-tel__nava nava" onclick="closeModalWindowTel()" href="#procedur">Наші процедури</a></li>
+            <li><a class="modal-tel__nava nava" onclick="closeModalWindowTel()" href="#where">Контакти</a></li>
+            <li>
+                <ul class="modal-tel__list-icon">
+                    <li>
+                        <a href="tel:+380960000007">
+                            <svg class="modal-tel__svg">
+                                <use href="./img/icon/icon.svg#tel"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg class="modal-tel__svg">
+                                <use href="./img/icon/icon.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg class="modal-tel__svg">
+                                <use href="./img/icon/icon.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <script src="./js/modal-tel.js"></script>
+    <script src="./js/modal-window.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/slider.js"></script>
 </body>
