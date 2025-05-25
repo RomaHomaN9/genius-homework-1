@@ -1,0 +1,86 @@
+.howchoose {
+    width: 1060px;
+    height: 377px;
+    margin-bottom: 96px;
+    @media screen and (max-width: $display-com) {
+        width: 316px;
+        height: 719px;
+        margin-bottom: 40px;
+    }
+    @media screen and (max-width: $display-book) {
+        height: 647px;
+    }
+
+    &__cent {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        width: 432px;
+        height: 148px;
+        line-height: 1.02;
+        font-size: 64px;
+        text-align: center;
+        @media screen and (max-width: $display-book) {
+            width: 216px;
+            height: 76px;
+            font-size: 32px;
+            line-height: 1.03;
+        }
+    }
+
+    &__objects {
+        width: 1060px;
+        height: 181px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        @media screen and (max-width: $display-com) {
+            width: 316px;
+            height: 571px;
+            flex-direction: column;
+        }
+    }
+
+    &__object {
+        width: 316px;
+        height: 181px;
+        box-shadow: 0 4px 4px 0 var(--shadow-1);
+        border-radius: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media screen and (max-width: $display-tel) {
+            width: 316px;
+            height: 177px;
+        }
+    }
+
+    &__object-div {
+        width: 252px;
+        height: 133px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        @media screen and (max-width: $display-tel) {
+            width: 252px;
+            height: 133px;
+        }
+    }
+
+    &__object-img {
+        width: 48px;
+        height: 48px;
+    }
+
+    &__object-p {
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.33;
+    }
+}
