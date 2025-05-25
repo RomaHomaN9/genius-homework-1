@@ -1,0 +1,108 @@
+.reincarnation {
+    width: 1240px;
+    height: 695px;
+    margin-bottom: 176px;
+    @media screen and (max-width: $display-com) {
+        width: 320px;
+        height: 374px;
+        margin-bottom: 104px;
+    }
+
+    &__cent {
+        width: 1240px;
+        height: 695px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: $display-com) {
+            width: 320px;
+            height: 374px;
+        }
+    }
+
+    /* text */
+
+    &__text {
+        width: 709px;
+        height: 456px;
+        position: relative;
+        top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @media screen and (max-width: $display-com) {
+            width: 320px;
+            height: 374px;
+            display: block;
+            flex-direction: none;
+            justify-content: none;
+        }
+    }
+
+    &__title {
+        width: 529px;
+        height: 148px;
+        line-height: 1.02;
+        font-size: 64px;
+        @media screen and (max-width: $display-com) {
+            width: 264px;
+            height: 76px;
+            font-size: 32px;
+            line-height: 1.03;
+            margin-bottom: 24px;
+        }
+    }
+
+    &__title-accent {
+        text-transform: capitalize;
+    }
+
+    &__paragraf-1,
+    &__paragraf-2 {
+        font-size: 22px;
+        line-height: 1.73;
+    }
+
+    &__paragraf-1 {
+        height: 76px;
+        @media screen and (max-width: $display-com) {
+            height: 76px;
+            font-size: 18px;
+            line-height: 1.17;
+            margin-bottom: 16px;
+        }
+    }
+
+    &__paragraf-2 {
+        height: 152px;
+        @media screen and (max-width: $display-com) {
+            height: 76px;
+            font-size: 18px;
+            line-height: 1.06;
+        }
+    }
+
+    /* img */
+
+    &__img-div {
+        width: 499px;
+        height: 695px;
+        display: flex;
+        flex-direction: column;
+        @media screen and (max-width: $display-com) {
+            display: none;
+        }
+    }
+
+    &__img {
+        border-radius: 50%;
+        width: 327px;
+        height: 327px;
+        box-shadow: 0 4px 4px 0 var(--shadow-2);
+    }
+
+    &__woman_after {
+        margin-left: auto;
+        margin-top: auto;
+    }
+}
