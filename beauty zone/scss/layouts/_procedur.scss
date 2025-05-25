@@ -1,0 +1,194 @@
+.procedur {
+    width: 1216px;
+    height: 621px;
+    margin-bottom: 96px;
+    @media screen and (max-width: $display-com) {
+        max-width: 856px;
+    }
+    @media screen and (max-width: $display-book) {
+        max-width: 496px;
+        margin-bottom: 40px;
+    }
+    @media screen and (max-width: $display-tel) {
+        max-width: 320px;
+    }
+
+    &__cent {
+        width: 1216px;
+        height: 621px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        @media screen and (max-width: $display-com) {
+            max-width: 856px;
+        }
+        @media screen and (max-width: $display-book) {
+            max-width: 496px;
+            height: 478px;
+        }
+        @media screen and (max-width: $display-tel) {
+            max-width: 320px;
+        }
+    }
+
+    &__title {
+        width: 510px;
+        height: 74px;
+        line-height: 1.02;
+        font-size: 64px;
+        @media screen and (max-width: $display-book) {
+            width: 257px;
+            height: 38px;
+            font-size: 32.16px;
+            line-height: 1.03;
+        }
+    }
+
+    &__object {
+        width: 1216px;
+        height: 499px;
+        @media screen and (max-width: $display-com) {
+            max-width: 856px;
+        }
+        @media screen and (max-width: $display-book) {
+            max-width: 496px;
+            height: 416px;
+        }
+        @media screen and (max-width: $display-tel) {
+            max-width: 320px;
+        }
+    }
+
+    &__flex {
+        width: 1216px;
+        height: 456px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media screen and (max-width: $display-com) {
+            max-width: 856px;
+        }
+        @media screen and (max-width: $display-book) {
+            max-width: 496px;
+            height: 416px;
+        }
+        @media screen and (max-width: $display-tel) {
+            max-width: 320px;
+        }
+    }
+
+    &__articles {
+        width: 1064px;
+        height: 456px;
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: $display-com) {
+            max-width: 704px;
+        }
+        @media screen and (max-width: $display-book) {
+            max-width: 320px;
+            height: 416px;
+        }
+    }
+
+    &__article {
+        width: 344px;
+        height: 456px;
+        border-radius: 4px 120px;
+        padding-top: 372px;
+        padding-left: 115px;
+        @media screen and (max-width: $display-tel) {
+            padding-top: 344px;
+            padding-left: 112px;
+            max-width: 320px;
+            height: 416px;
+        }
+    }
+
+    &__article-p {
+        width: 152px;
+        height: 52px;
+
+        color: var(--primary-white);
+        font-size: 22px;
+        line-height: 1.18;
+        text-align: center;
+        @media screen and (max-width: $display-tel) {
+            width: 136px;
+            height: 48px;
+            font-size: 20.15px;
+            line-height: 1.18;
+        }
+    }
+
+    &__mask-for-face {
+        background-image: linear-gradient(
+                180.05deg,
+                rgba(1, 28, 68, 0) 48.53%,
+                rgba(1, 28, 68, 0.725825) 84.61%,
+                rgba(1, 28, 68, 1) 101.39%
+            ),
+            url('../img/people/mask\ for\ face.jpg');
+    }
+
+    &__injection-for-face {
+        background-image: linear-gradient(
+                180.05deg,
+                rgba(1, 28, 68, 0) 48.53%,
+                rgba(1, 28, 68, 0.725825) 84.61%,
+                rgba(1, 28, 68, 1) 101.39%
+            ),
+            url('../img/people/injection\ for\ face.jpg');
+        @media screen and (max-width: $display-book) {
+            display: none;
+        }
+    }
+
+    &__clear-face {
+        background-image: linear-gradient(
+                180.05deg,
+                rgba(1, 28, 68, 0) 48.53%,
+                rgba(1, 28, 68, 0.725825) 84.61%,
+                rgba(1, 28, 68, 1) 101.39%
+            ),
+            url('../img/people/clear\ face.jpg');
+        @media screen and (max-width: $display-com) {
+            display: none;
+        }
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 44px;
+        height: 44px;
+        background-color: #0000;
+        border-radius: 50%;
+        border: 0.77px solid var(--primary-black);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media screen and (max-width: $display-tel) {
+            display: none;
+        }
+    }
+
+    .swiper-button-prev:hover,
+    .swiper-button-next:hover {
+        border-color: var(--primary-white);
+        fill: var(--primary-white);
+        background-color: var(--primary-blue);
+    }
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        display: none;
+    }
+
+    &__arrow-svg {
+        max-width: 16.76px;
+        max-height: 16.76px;
+        fill: var(--primary-black);
+    }
+}
