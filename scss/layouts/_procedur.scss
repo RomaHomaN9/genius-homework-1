@@ -73,6 +73,7 @@
         @media screen and (max-width: $display-book) {
             max-width: 320px;
             height: 416px;
+            padding: 0;
         }
 
         &::before {
@@ -191,7 +192,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        @media screen and (max-width: $display-tel) {
+        @media screen and (max-width: $display-book) {
             display: none;
         }
     }
@@ -220,9 +221,4 @@
         left: 50%;
         transform: translateX(-50%);
     }
-
-    // .swiper-button-prev {
-    //     position: absolute;
-    //     transform: translateX(-20px);
-    // }
 }
