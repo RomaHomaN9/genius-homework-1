@@ -1,0 +1,30 @@
+body button {
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+*,
+button {
+    font-family: 'Play', sans-serif;
+    box-sizing: border-box;
+    color: var(--primary-black);
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+section {
+    margin: 0 auto;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.rotate {
+    rotate: 180deg;
+}
